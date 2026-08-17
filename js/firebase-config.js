@@ -19,10 +19,13 @@
 // Authentication — this site uses neither, and Storage is the part that
 // asks for a paid plan.
 // ----------------------------------------------------------------------
+// storageBucket is deliberately left out of this object: the site uses
+// Firebase Storage for nothing, and Storage is the piece that asks for a
+// paid plan. Photos live in this repo's images/ folder instead.
 export const firebaseConfig = {
-  apiKey: "PASTE_ME",
-  authDomain: "PASTE_ME.firebaseapp.com",
-  projectId: "PASTE_ME",
-  messagingSenderId: "PASTE_ME",
-  appId: "PASTE_ME"
+  apiKey: "AIzaSyAs1L2zXGAkyb_tMhCVJfuWZlRhryoxc30",
+  authDomain: "wishlist-6c084.firebaseapp.com",
+  projectId: "wishlist-6c084",
+  messagingSenderId: "384806804830",
+  appId: "1:384806804830:web:63ec99d8e1d5e19b3203cf"
 };
