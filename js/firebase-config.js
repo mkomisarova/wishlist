@@ -14,6 +14,12 @@
 // It is safe for this to be public and committed to GitHub — it is not a
 // secret key, it just tells the browser which Firebase project to talk
 // to. The real protection is firestore.rules, not hiding this object.
+// GitHub's secret scanner still flags it; that alert can be dismissed.
+//
+// On top of the rules, the key itself is restricted in Google Cloud so it
+// can call the Firestore API and nothing else, and only from
+// https://mkomisarova.github.io/*. (Firestore ignores the referrer half —
+// that check only bites on the other Google APIs.)
 //
 // You only need Firestore. Do NOT enable Firebase Storage or
 // Authentication — this site uses neither, and Storage is the part that
