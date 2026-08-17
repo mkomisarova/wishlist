@@ -46,7 +46,10 @@ sortSelect.addEventListener("change", () => {
 // ---- Items: static JSON in the repo ----
 
 function normalize(raw, index) {
-  const priceMin = Number(raw.priceMin);
+  // A missing price means "no price shown", not €0 — some things on the
+  // list ("a book of your favourite recipes") don't have one.
+  const blank = (v) => v === undefined || v === null || v === "";
+  const priceMin = blank(raw.priceMin) ? NaN : Number(raw.priceMin);
   const priceMaxRaw = raw.priceMax === undefined || raw.priceMax === null || raw.priceMax === ""
     ? priceMin
     : Number(raw.priceMax);

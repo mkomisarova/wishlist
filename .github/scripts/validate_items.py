@@ -56,8 +56,12 @@ for idx, item in enumerate(items, start=1):
     if not item.get("name"):
         fail(f"{where}: needs a \"name\".")
 
+    # priceMin may be left out entirely for things that have no price
+    # ("a book of your favourite recipes"); the card just shows no price.
     price_min = item.get("priceMin")
-    if not isinstance(price_min, (int, float)) or isinstance(price_min, bool):
+    if price_min is not None and (
+        not isinstance(price_min, (int, float)) or isinstance(price_min, bool)
+    ):
         fail(f'{where}: "priceMin" must be a number with no quotes around it.')
 
     price_max = item.get("priceMax")
