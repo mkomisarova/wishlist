@@ -2,12 +2,13 @@
   {
     "id": "lego-minecraft-creeper",
     "name": "Minecraft LEGO Creeper",
-    "description": "⭐ Прямо очень хочу и давно хочу.",
+    "description": "",
     "priceMin": 40,
     "priceMax": null,
     "currency": "EUR",
     "category": "Лего и игрушки",
     "link": "",
+    "starred": true,
     "quantityType": "single",
     "image": "images/lego-minecraft-creeper.jpg"
   },
@@ -15,11 +16,12 @@
     "id": "lego-botanicals",
     "name": "Lego Botanicals",
     "description": "Любой набор из серии.",
-    "priceMin": 15,
-    "priceMax": 50,
+    "priceMin": 40,
+    "priceMax": null,
     "currency": "EUR",
     "category": "Лего и игрушки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/lego-botanicals.jpg"
   },
@@ -32,6 +34,7 @@
     "currency": "EUR",
     "category": "Творчество и канцелярия",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/markers-set.jpg"
   },
@@ -44,6 +47,7 @@
     "currency": "EUR",
     "category": "Книги",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/atomic-habits-workbook.jpg"
   },
@@ -56,6 +60,7 @@
     "currency": "EUR",
     "category": "Книги",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/make-your-brain-work.jpg"
   },
@@ -68,6 +73,7 @@
     "currency": "EUR",
     "category": "Книги",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/12-weeks-sharper-you.jpg"
   },
@@ -80,18 +86,20 @@
     "currency": "EUR",
     "category": "Для дома",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/cable-organizer.jpg"
   },
   {
     "id": "selfie-light",
     "name": "Selfie light для айфона",
-    "description": "⭐ Прямо очень хочу и давно хочу.",
+    "description": "",
     "priceMin": 20,
     "priceMax": null,
     "currency": "EUR",
     "category": "Техника",
     "link": "",
+    "starred": true,
     "quantityType": "single",
     "image": "images/selfie-light.jpg"
   },
@@ -104,6 +112,7 @@
     "currency": "EUR",
     "category": "Техника",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/pink-digital-camera.jpg"
   },
@@ -116,6 +125,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/sdj-cheeky-biquini.jpg"
   },
@@ -128,6 +138,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/sdj-bum-bum-scrub.jpg"
   },
@@ -140,18 +151,20 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/sdj-foot-cream.jpg"
   },
   {
     "id": "hp-sprocket-printer",
     "name": "HP Sprocket Portable Instant Photo Printer",
-    "description": "⭐ Прямо очень хочу и давно хочу. 2\"x3\", Blush Pink.",
+    "description": "2\"x3\", Blush Pink.",
     "priceMin": 100,
     "priceMax": null,
     "currency": "EUR",
     "category": "Техника",
     "link": "",
+    "starred": true,
     "quantityType": "single",
     "image": "images/hp-sprocket-printer.jpg"
   },
@@ -164,6 +177,7 @@
     "currency": "EUR",
     "category": "Украшения",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/gold-chain-pendant.jpg"
   },
@@ -171,11 +185,12 @@
     "id": "butter-squishy",
     "name": "Butter squishy",
     "description": "Особенно большой.",
-    "priceMin": 5,
-    "priceMax": 20,
+    "priceMin": 15,
+    "priceMax": null,
     "currency": "EUR",
     "category": "Лего и игрушки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/butter-squishy.jpg"
   },
@@ -188,6 +203,7 @@
     "currency": "EUR",
     "category": "Лего и игрушки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/mystery-dumpling.jpg"
   },
@@ -200,6 +216,7 @@
     "currency": "EUR",
     "category": "Одежда",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/oodie.jpg"
   },
@@ -212,6 +229,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/body-shop-passionfruit.jpg"
   },
@@ -224,6 +242,7 @@
     "currency": "EUR",
     "category": "Лего и игрушки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/squishmallows-big.jpg"
   },
@@ -236,6 +255,7 @@
     "currency": "EUR",
     "category": "Впечатления",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/massage-certificate.jpg"
   },
@@ -248,6 +268,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/morphe-outer-spice.jpg"
   },
@@ -260,6 +281,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/summer-fridays-holiday-trio.jpg"
   },
@@ -272,6 +294,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/dior-rose-gold-glow.jpg"
   },
@@ -284,6 +307,7 @@
     "currency": "EUR",
     "category": "Для дома",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/mateus-oyster-bowl.jpg"
   },
@@ -296,6 +320,7 @@
     "currency": "EUR",
     "category": "Для дома",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/mateus-oyster-plate.jpg"
   },
@@ -308,6 +333,7 @@
     "currency": "EUR",
     "category": "Для дома",
     "link": "",
+    "starred": false,
     "quantityType": "single",
     "image": "images/serax-fish-carafe-set.jpg"
   },
@@ -320,18 +346,20 @@
     "currency": "EUR",
     "category": "Еда и напитки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/tea-selection.jpg"
   },
   {
     "id": "lip-balm-gloss",
     "name": "Любая гигиеническая помада/блеск для губ",
-    "description": "⭐ Прямо очень хочу и давно хочу.",
+    "description": "",
     "priceMin": 10,
     "priceMax": null,
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": true,
     "quantityType": "multiple",
     "image": "images/lip-balm-gloss.jpg"
   },
@@ -344,6 +372,7 @@
     "currency": "EUR",
     "category": "Творчество и канцелярия",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/cool-stickers.jpg"
   },
@@ -356,6 +385,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/glittery-makeup.jpg"
   },
@@ -368,6 +398,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/face-sheet-masks.jpg"
   },
@@ -380,6 +411,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/shower-care.jpg"
   },
@@ -392,6 +424,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/hair-mask-oil.jpg"
   },
@@ -404,6 +437,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/lip-mask.jpg"
   },
@@ -416,6 +450,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/tree-hut-scrub.jpg"
   },
@@ -428,6 +463,7 @@
     "currency": "EUR",
     "category": "Еда и напитки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/dark-chocolate.jpg"
   },
@@ -440,6 +476,7 @@
     "currency": "EUR",
     "category": "Еда и напитки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/bob-snail.jpg"
   },
@@ -452,6 +489,7 @@
     "currency": "EUR",
     "category": "Одежда",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/fun-socks.jpg"
   },
@@ -464,6 +502,7 @@
     "currency": "EUR",
     "category": "Творчество и канцелярия",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/paint-by-numbers.jpg"
   },
@@ -476,6 +515,7 @@
     "currency": "EUR",
     "category": "Книги",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/recipe-book.jpg"
   },
@@ -488,6 +528,7 @@
     "currency": "EUR",
     "category": "Книги",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/detective-books.jpg"
   },
@@ -500,6 +541,7 @@
     "currency": "EUR",
     "category": "Техника",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/iphone-cases.jpg"
   },
@@ -512,6 +554,7 @@
     "currency": "EUR",
     "category": "Творчество и канцелярия",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/blue-pens.jpg"
   },
@@ -524,6 +567,7 @@
     "currency": "EUR",
     "category": "Лего и игрушки",
     "link": "",
+    "starred": false,
     "quantityType": "multiple",
     "image": ""
   }

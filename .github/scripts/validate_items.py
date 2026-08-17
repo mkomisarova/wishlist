@@ -71,6 +71,11 @@ for idx, item in enumerate(items, start=1):
         elif isinstance(price_min, (int, float)) and price_max < price_min:
             fail(f"{where}: priceMax ({price_max}) is lower than priceMin ({price_min}).")
 
+    # "starred" is the star from the wishlist slides — it draws the gold frame.
+    starred = item.get("starred", False)
+    if not isinstance(starred, bool):
+        fail(f'{where}: "starred" must be true or false, not "{starred}".')
+
     qty = item.get("quantityType", "single")
     if qty not in ("single", "multiple"):
         fail(f'{where}: "quantityType" must be "single" or "multiple", not "{qty}".')

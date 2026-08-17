@@ -10,20 +10,21 @@
 
 <header class="page-header">
   <h1>🎁 Milana's Wishlist</h1>
-  <p>Tap "I'll get this" on one-of-a-kind items to claim them for everyone to see — untap any time. No sign-up needed.</p>
+  <p>Нажми «Я куплю» на подарках, которые дарят один раз — все увидят, что он уже занят. Снять отметку можно в любой момент, регистрация не нужна.</p>
   <p class="rules-note">Свои идеи тоже приветствуются, и самодельное тоже!!!</p>
+  <p class="gold-legend"><span class="gold-key"></span> = прямо очень хочу и давно хочу</p>
 </header>
 
 <div id="notice" class="notice hidden"></div>
 
 <div class="controls">
   <div class="controls-row">
-    <input type="text" id="search-input" placeholder="Search wishlist..." />
+    <input type="text" id="search-input" placeholder="Поиск по списку..." />
     <select id="sort-select">
-      <option value="price-asc">Price: Low to High</option>
-      <option value="price-desc">Price: High to Low</option>
-      <option value="newest">Newest first</option>
-      <option value="name-asc">Name: A to Z</option>
+      <option value="custom">Как в списке</option>
+      <option value="price-asc">Сначала дешёвые</option>
+      <option value="price-desc">Сначала дорогие</option>
+      <option value="name-asc">По алфавиту</option>
     </select>
   </div>
   <div class="chip-row" id="category-chips">
@@ -33,7 +34,7 @@
 
 <main>
   <div id="empty-state">
-    <p>No items match your filters yet.</p>
+    <p>Ничего не нашлось.</p>
   </div>
   <div class="grid" id="items-grid"></div>
 </main>
@@ -46,10 +47,6 @@
     <li><span class="interest-emoji">🦕</span><span><strong>Динозавры</strong> — можно дарить всё с динозаврами</span></li>
     <li><span class="interest-emoji">🔢</span><span><strong>Судоку</strong> — можно дарить журналы судоку</span></li>
     <li><span class="interest-emoji">🎤</span><span><strong>Тейлор Свифт</strong> — её мерч и всё с ней</span></li>
-    <li><span class="interest-emoji">✈️</span><span><strong>Travel</strong></span></li>
-    <li><span class="interest-emoji">🎟️</span><span><strong>Gift cards</strong></span></li>
-    <li><span class="interest-emoji">📷</span><span><strong>Camera</strong></span></li>
-    <li><span class="interest-emoji">📱</span><span><strong>Tablet</strong></span></li>
   </ul>
   <p class="fav-colors">
     Любимые цвета:
@@ -59,7 +56,7 @@
 </section>
 
 <footer class="page-footer">
-  <p>Made with 💛 — thank you for looking!</p>
+  <p>Спасибо! 💛</p>
 </footer>
 
 <script type="module" src="js/app.js"></script>

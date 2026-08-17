@@ -27,11 +27,14 @@ const sortSelect = document.getElementById("sort-select");
 const chipRow = document.getElementById("category-chips");
 const noticeEl = document.getElementById("notice");
 
+const ALL_CATEGORIES = "Все";
+
 let allItems = [];
 let claims = {}; // item id -> true/false
-let selectedCategory = "All";
+let selectedCategory = ALL_CATEGORIES;
 
-const state = { search: "", sort: "price-asc" };
+// "custom" is the order Milana put the items in inside data/items.json.
+const state = { search: "", sort: "custom" };
 
 searchInput.addEventListener("input", () => {
   state.search = searchInput.value.trim().toLowerCase();
@@ -62,6 +65,9 @@ function normalize(raw, index) {
     currency: raw.currency || "EUR",
     category: raw.category || "",
     link: raw.link || "",
+    // The star from the wishlist slides: "прямо очень хочу и давно хочу".
+    // Shown as a gold frame on the card rather than as text.
+    starred: raw.starred === true,
     quantityType: raw.quantityType === "multiple" ? "multiple" : "single",
     image: raw.image || "",
     added: raw.added || "",
@@ -96,7 +102,7 @@ function watchClaims() {
       });
       render();
     },
-    (err) => showNotice("Couldn't reach the claim list: " + err.message)
+    (err) => showNotice("Не получилось загрузить отметки: " + err.message)
   );
 }
 
@@ -116,12 +122,12 @@ function renderCategoryChips() {
     new Set(allItems.map((i) => i.category).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
 
-  if (!categories.includes(selectedCategory) && selectedCategory !== "All") {
-    selectedCategory = "All";
+  if (!categories.includes(selectedCategory) && selectedCategory !== ALL_CATEGORIES) {
+    selectedCategory = ALL_CATEGORIES;
   }
 
   chipRow.innerHTML = "";
-  chipRow.appendChild(makeChip("All"));
+  chipRow.appendChild(makeChip(ALL_CATEGORIES));
   categories.forEach((c) => chipRow.appendChild(makeChip(c)));
 }
 
@@ -146,7 +152,7 @@ function formatPrice(item) {
 }
 
 function matchesFilters(item) {
-  if (selectedCategory !== "All" && item.category !== selectedCategory) return false;
+  if (selectedCategory !== ALL_CATEGORIES && item.category !== selectedCategory) return false;
   if (state.search) {
     const haystack = `${item.name} ${item.description}`.toLowerCase();
     if (!haystack.includes(state.search)) return false;
@@ -157,6 +163,9 @@ function matchesFilters(item) {
 function sortItems(items) {
   const sorted = [...items];
   switch (state.sort) {
+    case "custom":
+      sorted.sort((a, b) => a._order - b._order);
+      break;
     case "price-asc":
       sorted.sort((a, b) => (a.priceMin ?? 0) - (b.priceMin ?? 0) || a._order - b._order);
       break;
@@ -196,7 +205,8 @@ function renderCard(item) {
   const claimed = isSingle && !!claims[item.id];
 
   const card = document.createElement("div");
-  card.className = "card" + (claimed ? " is-claimed" : "");
+  card.className =
+    "card" + (item.starred ? " is-starred" : "") + (claimed ? " is-claimed" : "");
 
   const imageWrap = document.createElement("div");
   imageWrap.className = "card-image-wrap";
@@ -212,7 +222,7 @@ function renderCard(item) {
   if (claimed) {
     const ribbon = document.createElement("div");
     ribbon.className = "claimed-ribbon";
-    ribbon.textContent = "Claimed";
+    ribbon.textContent = "Забронировано";
     card.appendChild(ribbon);
   }
 
@@ -265,23 +275,23 @@ function renderCard(item) {
     checkbox.type = "checkbox";
     checkbox.checked = claimed;
     checkbox.disabled = !db;
-    if (!db) toggle.title = "Claim syncing isn't set up yet";
+    if (!db) toggle.title = "Отметки пока не подключены";
     checkbox.addEventListener("change", () => {
       const wanted = checkbox.checked;
       setClaim(item.id, wanted).catch((err) => {
         checkbox.checked = !wanted;
-        alert("Couldn't save that — check your connection. " + err.message);
+        alert("Не получилось сохранить — проверь соединение. " + err.message);
       });
     });
     const labelText = document.createElement("span");
-    labelText.textContent = claimed ? "Claimed" : "I'll get this";
+    labelText.textContent = claimed ? "Забронировано" : "Я куплю";
     toggle.appendChild(checkbox);
     toggle.appendChild(labelText);
     footer.appendChild(toggle);
   } else {
     const badge = document.createElement("span");
     badge.className = "multi-badge";
-    badge.textContent = "Happy to have more than one!";
+    badge.textContent = "Можно больше одного!";
     footer.appendChild(badge);
   }
 
@@ -298,6 +308,6 @@ try {
   render();
   watchClaims();
 } catch (err) {
-  emptyEl.innerHTML = `<p>Couldn't load the wishlist.</p><p style="font-size:0.85rem">${err.message}</p>`;
+  emptyEl.innerHTML = `<p>Не получилось загрузить список.</p><p style="font-size:0.85rem">${err.message}</p>`;
   emptyEl.style.display = "block";
 }
