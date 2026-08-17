@@ -80,17 +80,17 @@ Repo **Settings → Pages** → Source: "Deploy from a branch" → branch
 
 ### Firebase (only for the claim ticks)
 
-Skip this and everything works except the ticks.
+**Already set up** — project `wishlist-6c084`, config in
+`js/firebase-config.js`, rules published. Nothing to do here.
 
-1. [console.firebase.google.com](https://console.firebase.google.com) →
-   **Add project** → any name → skip Analytics
-2. **Build → Firestore Database → Create database** → region near you →
-   **production mode**
-3. **⚙ Project settings → Your apps → `</>`** → register a web app → copy
-   the `firebaseConfig` object → paste the values into
-   `js/firebase-config.js`
-4. **Firestore Database → Rules tab** → paste in `firestore.rules` from
-   this repo → **Publish**
+If you ever edit `firestore.rules`, publish the change with:
+
+```
+firebase deploy --only firestore:rules --project wishlist-6c084
+```
+
+That reads `firebase.json` in this repo. If it says you're logged out,
+run `firebase login --reauth` first.
 
 Do **not** enable Firebase Storage or Authentication. This site uses
 neither, and Storage is the part that asks for a paid plan.
