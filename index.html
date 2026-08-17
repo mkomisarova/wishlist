@@ -4,7 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Milana's Wishlist</title>
-<link rel="stylesheet" href="css/style.css" />
+<!-- The ?v= number is a cache-buster: browsers hang on to the old style.css
+     and app.js for a while after a change, so bump this number whenever
+     either file changes and every visitor gets the new one immediately. -->
+<link rel="stylesheet" href="css/style.css?v=2" />
 </head>
 <body>
 
@@ -59,6 +62,6 @@
   <p>Спасибо! 💛</p>
 </footer>
 
-<script type="module" src="js/app.js"></script>
+<script type="module" src="js/app.js?v=2"></script>
 </body>
 </html>
