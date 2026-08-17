@@ -175,9 +175,6 @@ function sortItems(items) {
     case "price-desc":
       sorted.sort((a, b) => (b.priceMin ?? 0) - (a.priceMin ?? 0) || a._order - b._order);
       break;
-    case "name-asc":
-      sorted.sort((a, b) => a.name.localeCompare(b.name));
-      break;
     case "newest": {
       // Sorts by the optional "added" date. Items without one keep the
       // order they appear in items.json, after any dated ones.
