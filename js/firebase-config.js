@@ -1,17 +1,28 @@
 // ----------------------------------------------------------------------
 // PASTE YOUR FIREBASE CONFIG HERE.
-// You get this object from: Firebase Console -> Project settings ->
-// General tab -> "Your apps" -> the web app (</>) -> SDK setup and config.
-// It is safe for this to be public / committed to GitHub — it is not a
+//
+// This is used for ONE thing: syncing the "someone claimed this" tick
+// boxes between visitors. Everything else about the site — the items,
+// the photos, the pages — is static content in this repo and works
+// without it. Until you fill this in, the site still loads fine; the
+// tick boxes are just disabled.
+//
+// You get this object from: Firebase Console -> Project settings (gear
+// icon) -> General tab -> "Your apps" -> the web app (</>) -> SDK setup
+// and config. Paste it exactly as shown there.
+//
+// It is safe for this to be public and committed to GitHub — it is not a
 // secret key, it just tells the browser which Firebase project to talk
-// to. Real protection comes from the security rules (firestore.rules
-// and storage.rules), not from hiding this object.
+// to. The real protection is firestore.rules, not hiding this object.
+//
+// You only need Firestore. Do NOT enable Firebase Storage or
+// Authentication — this site uses neither, and Storage is the part that
+// asks for a paid plan.
 // ----------------------------------------------------------------------
 export const firebaseConfig = {
   apiKey: "PASTE_ME",
   authDomain: "PASTE_ME.firebaseapp.com",
   projectId: "PASTE_ME",
-  storageBucket: "PASTE_ME.firebasestorage.app",
   messagingSenderId: "PASTE_ME",
   appId: "PASTE_ME"
 };

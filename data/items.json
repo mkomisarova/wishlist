@@ -1,0 +1,40 @@
+[
+  {
+    "id": "botanical-lego",
+    "name": "Botanical Garden Lego",
+    "description": "The flower bouquet one — any set from that range works.",
+    "priceMin": 15,
+    "priceMax": 50,
+    "currency": "EUR",
+    "category": "Lego",
+    "link": "https://www.lego.com/",
+    "quantityType": "single",
+    "image": "",
+    "added": "2026-08-17"
+  },
+  {
+    "id": "lip-gloss",
+    "name": "Lip gloss",
+    "description": "Any shade, any brand — I will genuinely use all of them.",
+    "priceMin": 8,
+    "priceMax": 20,
+    "currency": "EUR",
+    "category": "Makeup",
+    "link": "",
+    "quantityType": "multiple",
+    "image": "",
+    "added": "2026-08-17"
+  },
+  {
+    "id": "anna-karenina",
+    "name": "Anna Karenina",
+    "description": "Hardcover, English translation.",
+    "priceMin": 30,
+    "currency": "EUR",
+    "category": "Books",
+    "link": "",
+    "quantityType": "single",
+    "image": "",
+    "added": "2026-08-16"
+  }
+]

@@ -2,21 +2,35 @@ rules_version = '2';
 
 // Paste this into: Firebase Console -> Firestore Database -> Rules tab.
 //
-// Design:
-//  - Anyone (no login) can READ the wishlist — needed for the public site.
-//  - Anyone (no login) can UPDATE an item, but ONLY the "claimed" field.
-//    That's what lets visitors check/uncheck items with no account.
-//  - Creating, deleting, or editing any other field (price, name, photo...)
-//    requires being signed in — that's Milana, via admin.html.
+// The ONLY thing this database stores is one tiny document per wishlist
+// item, holding a single boolean: has someone claimed it? The items
+// themselves, the photos and the site all live in the GitHub repo.
+//
+// There are no user accounts anywhere in this app — not for visitors,
+// not for the owner. Editing the wishlist happens by committing to the
+// repo, which GitHub already authenticates.
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /items/{itemId} {
+    match /claims/{itemId} {
+
+      // Anyone can see what's already been claimed.
       allow read: if true;
 
-      allow create, delete: if request.auth != null;
+      // Anyone can claim or unclaim, with no login — that's the whole
+      // point. The rule keeps that narrow: a claim document may contain
+      // nothing but a `claimed` boolean, so this can't be abused as free
+      // storage for arbitrary data.
+      allow create, update: if request.resource.data.keys().hasOnly(['claimed'])
+                            && request.resource.data.claimed is bool
+                            && itemId.size() <= 64;
 
-      allow update: if request.auth != null
-        || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['claimed']);
+      // Unclaiming sets `claimed` to false; nothing needs to delete.
+      allow delete: if false;
+    }
+
+    // Nothing else in the database is readable or writable at all.
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

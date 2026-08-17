@@ -1,0 +1,18 @@
+name: Validate wishlist
+
+# Runs on every change to the wishlist so a typo in items.json shows up as
+# a red X here instead of as a blank page on the live site.
+on:
+  push:
+    paths: ["data/items.json", "images/**", ".github/workflows/validate-items.yml"]
+  pull_request:
+    paths: ["data/items.json", "images/**"]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check data/items.json
+        run: python3 .github/scripts/validate_items.py

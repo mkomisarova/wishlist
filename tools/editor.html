@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wishlist editor</title>
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="page-header">
+  <h1>Wishlist editor</h1>
+  <p>Runs entirely on your own computer — no login, nothing uploaded anywhere.</p>
+</header>
+
+<div class="admin-wrap">
+
+  <div class="admin-card">
+    <h2>1 · Load your current list</h2>
+    <div class="field">
+      <label for="load-input">Open <code>data/items.json</code> from your wishlist folder</label>
+      <input type="file" id="load-input" accept=".json,application/json" />
+    </div>
+    <p class="hint" id="load-status">Or just start adding items below to build a list from scratch.</p>
+  </div>
+
+  <div class="admin-card">
+    <h2 id="form-title">2 · Add an item</h2>
+    <form id="item-form">
+      <div class="field">
+        <label for="item-name">Name</label>
+        <input type="text" id="item-name" required />
+      </div>
+      <div class="field">
+        <label for="item-description">Description</label>
+        <textarea id="item-description"></textarea>
+      </div>
+      <div class="price-row">
+        <div class="field">
+          <label for="item-price-min">Price (or low end of range)</label>
+          <input type="number" id="item-price-min" min="0" step="0.01" required />
+        </div>
+        <div class="field">
+          <label for="item-price-max">High end of range (optional)</label>
+          <input type="number" id="item-price-max" min="0" step="0.01" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="item-category">Category</label>
+        <input type="text" id="item-category" list="category-list" placeholder="e.g. Makeup, Lego, Books" />
+        <datalist id="category-list"></datalist>
+      </div>
+      <div class="field">
+        <label for="item-link">Link (optional)</label>
+        <input type="url" id="item-link" placeholder="https://..." />
+      </div>
+      <div class="field">
+        <label>How many would make you happy?</label>
+        <div class="radio-row">
+          <label><input type="radio" name="quantityType" value="single" checked /> Just one</label>
+          <label><input type="radio" name="quantityType" value="multiple" /> As many as people want to get</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="item-image">Photo</label>
+        <input type="file" id="item-image" accept="image/*" />
+        <p class="hint">Picks the filename only. You'll drop the actual photo into the
+          <code>images/</code> folder in step 3 — nothing is uploaded from here.</p>
+        <input type="text" id="item-image-path" placeholder="images/something.jpg" />
+        <img id="image-preview" class="hidden" style="width:80px;height:80px;object-fit:cover;border-radius:8px;margin-top:6px;" />
+      </div>
+      <button type="submit" class="primary" id="submit-btn">Add item</button>
+      <button type="button" class="secondary hidden" id="cancel-edit-btn">Cancel edit</button>
+      <div id="form-msg"></div>
+    </form>
+  </div>
+
+  <div class="admin-card">
+    <h2>Items in the list (<span id="item-count">0</span>)</h2>
+    <div id="items-list"></div>
+  </div>
+
+  <div class="admin-card">
+    <h2>3 · Save it back</h2>
+    <button type="button" class="primary" id="download-btn">Download items.json</button>
+    <div id="download-msg"></div>
+    <p class="hint">
+      Then on github.com, in your wishlist repo: drop the downloaded
+      <code>items.json</code> into the <code>data/</code> folder (replacing the old one),
+      and drop any new photos into <code>images/</code>. Commit, and the site
+      updates in a minute or so.
+    </p>
+    <div id="image-todo"></div>
+  </div>
+
+</div>
+
+<script type="module" src="editor.js"></script>
+</body>
+</html>
