@@ -1,0 +1,22 @@
+rules_version = '2';
+
+// Paste this into: Firebase Console -> Firestore Database -> Rules tab.
+//
+// Design:
+//  - Anyone (no login) can READ the wishlist — needed for the public site.
+//  - Anyone (no login) can UPDATE an item, but ONLY the "claimed" field.
+//    That's what lets visitors check/uncheck items with no account.
+//  - Creating, deleting, or editing any other field (price, name, photo...)
+//    requires being signed in — that's Milana, via admin.html.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /items/{itemId} {
+      allow read: if true;
+
+      allow create, delete: if request.auth != null;
+
+      allow update: if request.auth != null
+        || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['claimed']);
+    }
+  }
+}

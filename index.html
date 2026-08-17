@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Milana's Wishlist</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="page-header">
+  <h1>🎁 Milana's Wishlist</h1>
+  <p>Tap "I'll get this" on one-of-a-kind items to claim them for everyone to see — untap any time.</p>
+</header>
+
+<div class="controls">
+  <div class="controls-row">
+    <input type="text" id="search-input" placeholder="Search wishlist..." />
+    <select id="sort-select">
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="newest">Newest first</option>
+      <option value="name-asc">Name: A to Z</option>
+    </select>
+  </div>
+  <div class="chip-row" id="category-chips">
+    <!-- filled by app.js -->
+  </div>
+</div>
+
+<main>
+  <div id="empty-state">
+    <p>No items match your filters yet.</p>
+  </div>
+  <div class="grid" id="items-grid"></div>
+</main>
+
+<footer class="page-footer">
+  <a href="admin.html">+ manage items</a>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
