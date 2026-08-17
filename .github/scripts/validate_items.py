@@ -71,6 +71,12 @@ for idx, item in enumerate(items, start=1):
         elif isinstance(price_min, (int, float)) and price_max < price_min:
             fail(f"{where}: priceMax ({price_max}) is lower than priceMin ({price_min}).")
 
+    # "priceLabel" is what the card shows — "~€20", "€15–50", "~бесценно".
+    # Leave it out and the card falls back to priceMin/priceMax.
+    price_label = item.get("priceLabel")
+    if price_label is not None and not isinstance(price_label, str):
+        fail(f'{where}: "priceLabel" must be text in quotes.')
+
     # "starred" is the star from the wishlist slides — it draws the gold frame.
     starred = item.get("starred", False)
     if not isinstance(starred, bool):

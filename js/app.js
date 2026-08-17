@@ -62,6 +62,8 @@ function normalize(raw, index) {
     description: raw.description || "",
     priceMin: Number.isFinite(priceMin) ? priceMin : null,
     priceMax: Number.isFinite(priceMaxRaw) ? priceMaxRaw : null,
+    // Milana's own notation from the slides: "~€20", "€15–50", "~бесценно".
+    priceLabel: typeof raw.priceLabel === "string" ? raw.priceLabel : "",
     currency: raw.currency || "EUR",
     category: raw.category || "",
     link: raw.link || "",
@@ -144,6 +146,7 @@ function makeChip(label) {
 }
 
 function formatPrice(item) {
+  if (item.priceLabel) return item.priceLabel;
   const symbol = item.currency === "EUR" ? "€" : item.currency + " ";
   const { priceMin: min, priceMax: max } = item;
   if (min == null) return "";
