@@ -225,7 +225,7 @@ function renderCard(item) {
   if (claimed) {
     const ribbon = document.createElement("div");
     ribbon.className = "claimed-ribbon";
-    ribbon.textContent = "Забронировано";
+    ribbon.textContent = "Занято";
     card.appendChild(ribbon);
   }
 
@@ -287,7 +287,7 @@ function renderCard(item) {
       });
     });
     const labelText = document.createElement("span");
-    labelText.textContent = claimed ? "Забронировано" : "Я куплю";
+    labelText.textContent = claimed ? "Занято" : "Я куплю";
     toggle.appendChild(checkbox);
     toggle.appendChild(labelText);
     footer.appendChild(toggle);
