@@ -15,7 +15,7 @@
   {
     "id": "lego-botanicals",
     "name": "Lego Botanicals",
-    "description": "Любой набор из серии.",
+    "description": "Любой набор из серии",
     "priceMin": 40,
     "priceMax": null,
     "currency": "EUR",
@@ -41,7 +41,7 @@
   {
     "id": "atomic-habits-workbook",
     "name": "Atomic Habits Workbook",
-    "description": "James Clear.",
+    "description": "James Clear",
     "priceMin": 20,
     "priceMax": null,
     "currency": "EUR",
@@ -54,7 +54,7 @@
   {
     "id": "make-your-brain-work",
     "name": "Make Your Brain Work",
-    "description": "Amy Brann.",
+    "description": "Amy Brann",
     "priceMin": 20,
     "priceMax": null,
     "currency": "EUR",
@@ -67,7 +67,7 @@
   {
     "id": "12-weeks-sharper-you",
     "name": "12 Weeks to a Sharper You",
-    "description": "Dr Sanjay Gupta.",
+    "description": "Dr Sanjay Gupta",
     "priceMin": 14,
     "priceMax": null,
     "currency": "EUR",
@@ -145,7 +145,7 @@
   {
     "id": "sdj-foot-cream",
     "name": "Sol de Janeiro Foot Cream",
-    "description": "Samba Foot Fetish Cream.",
+    "description": "Samba Foot Fetish Cream",
     "priceMin": 20,
     "priceMax": null,
     "currency": "EUR",
@@ -158,7 +158,7 @@
   {
     "id": "hp-sprocket-printer",
     "name": "HP Sprocket Portable Instant Photo Printer",
-    "description": "2\"x3\", Blush Pink.",
+    "description": "2\"x3\", Blush Pink",
     "priceMin": 100,
     "priceMax": null,
     "currency": "EUR",
@@ -171,7 +171,7 @@
   {
     "id": "gold-chain-pendant",
     "name": "Цепочка из золота с подвеской",
-    "description": "С обычным камнем.",
+    "description": "С обычным камнем",
     "priceMin": 100,
     "priceMax": null,
     "currency": "EUR",
@@ -184,7 +184,7 @@
   {
     "id": "butter-squishy",
     "name": "Butter squishy",
-    "description": "Особенно большой.",
+    "description": "Особенно большой",
     "priceMin": 15,
     "priceMax": null,
     "currency": "EUR",
@@ -223,7 +223,7 @@
   {
     "id": "body-shop-passionfruit",
     "name": "The Body Shop Passionfruit или Caramel Cuddle",
-    "description": "Что угодно с этими вкусами.",
+    "description": "Что угодно с этими вкусами",
     "priceMin": 15,
     "priceMax": null,
     "currency": "EUR",
@@ -236,7 +236,7 @@
   {
     "id": "squishmallows-big",
     "name": "Squishmallows большой",
-    "description": "50–60 см.",
+    "description": "50–60 см",
     "priceMin": 35,
     "priceMax": null,
     "currency": "EUR",
@@ -301,7 +301,7 @@
   {
     "id": "mateus-oyster-bowl",
     "name": "Mateus Oyster bļoda 18x16 cm rozā",
-    "description": "Stockmann.",
+    "description": "Stockmann",
     "priceMin": 44,
     "priceMax": null,
     "currency": "EUR",
@@ -314,7 +314,7 @@
   {
     "id": "mateus-oyster-plate",
     "name": "Mateus Oyster šķīvis 20 cm rozā",
-    "description": "Stockmann.",
+    "description": "Stockmann",
     "priceMin": 35,
     "priceMax": null,
     "currency": "EUR",
@@ -327,7 +327,7 @@
   {
     "id": "serax-fish-carafe-set",
     "name": "Serax blue fish carafe and glasses set",
-    "description": "Stockmann.",
+    "description": "Stockmann",
     "priceMin": 40,
     "priceMax": null,
     "currency": "EUR",
@@ -379,7 +379,7 @@
   {
     "id": "glittery-makeup",
     "name": "Любая блестящая косметика",
-    "description": "Особенно золотая — тени, лайнер, блеск. Например от NYX.",
+    "description": "Особенно золотая — тени, лайнер, блеск, например от NYX",
     "priceMin": 15,
     "priceMax": null,
     "currency": "EUR",
@@ -405,7 +405,7 @@
   {
     "id": "shower-care",
     "name": "Уходовые средства",
-    "description": "Гель для душа, скраб, мыло.",
+    "description": "Гель для душа, скраб, мыло",
     "priceMin": 7,
     "priceMax": null,
     "currency": "EUR",
@@ -457,7 +457,7 @@
   {
     "id": "dark-chocolate",
     "name": "Темный шоколад 72–75%",
-    "description": "Просто или с ягодами/орехами.",
+    "description": "Просто или с ягодами/орехами",
     "priceMin": 5,
     "priceMax": null,
     "currency": "EUR",
@@ -483,7 +483,7 @@
   {
     "id": "fun-socks",
     "name": "Носки",
-    "description": "С рисунками, цветные, можно теплые.",
+    "description": "С рисунками, цветные, можно теплые",
     "priceMin": 10,
     "priceMax": null,
     "currency": "EUR",
@@ -496,7 +496,7 @@
   {
     "id": "paint-by-numbers",
     "name": "Paint by numbers",
-    "description": "Пейзаж или что-нибудь прикольное.",
+    "description": "Пейзаж или что-нибудь прикольное",
     "priceMin": 10,
     "priceMax": null,
     "currency": "EUR",
@@ -509,7 +509,7 @@
   {
     "id": "recipe-book",
     "name": "Книга своих любимых проверенных рецептов",
-    "description": "Бесценно.",
+    "description": "Бесценно",
     "priceMin": null,
     "priceMax": null,
     "currency": "EUR",
@@ -522,7 +522,7 @@
   {
     "id": "detective-books",
     "name": "Книжки на усмотрение дарящего",
-    "description": "Люблю детективы.",
+    "description": "Люблю детективы",
     "priceMin": 15,
     "priceMax": null,
     "currency": "EUR",
@@ -561,7 +561,7 @@
   {
     "id": "trendy-stuff",
     "name": "Трендовая фигня",
-    "description": "Сквиши, лабубу и так далее.",
+    "description": "Сквиши, лабубу и так далее",
     "priceMin": 10,
     "priceMax": null,
     "currency": "EUR",

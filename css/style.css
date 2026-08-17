@@ -161,7 +161,14 @@ main {
    A gold frame instead of an icon, explained by .gold-legend up top. */
 .card.is-starred {
   border: 2px solid var(--gold);
+  background: var(--gold-soft);
   box-shadow: 0 2px 14px rgba(201, 154, 46, 0.22);
+}
+
+/* The photo sits on the gold too, so the letterboxed ones don't show white. */
+.card.is-starred .card-image-wrap,
+.card.is-starred .claim-toggle {
+  background: var(--gold-soft);
 }
 
 .card.is-starred:hover {
