@@ -197,6 +197,8 @@ main {
   flex: 1;
 }
 
+/* Not printed on the cards any more — the categories only drive the chip
+   filter. Kept in case they should show up on the card again. */
 .card-category {
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -234,14 +236,20 @@ main {
   gap: 8px;
 }
 
-.card-link {
-  font-size: 0.82rem;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
+/* Cards for things with a shop page: the name is the link. Dotted underline
+   so it reads as clickable without shouting, solid on hover. */
+.card-name-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
 }
 
-.card-link:hover { text-decoration: underline; }
+.card-name-link:hover {
+  color: var(--accent);
+  text-decoration-style: solid;
+}
 
 .claim-toggle {
   display: flex;

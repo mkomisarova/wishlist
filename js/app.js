@@ -229,16 +229,23 @@ function renderCard(item) {
   const body = document.createElement("div");
   body.className = "card-body";
 
-  if (item.category) {
-    const cat = document.createElement("div");
-    cat.className = "card-category";
-    cat.textContent = item.category;
-    body.appendChild(cat);
-  }
+  // The category isn't printed on the card — it only drives the chip filter
+  // above the grid.
 
   const name = document.createElement("h3");
   name.className = "card-name";
-  name.textContent = item.name;
+  if (item.link) {
+    // Where there's a shop page for it, the name itself is the link.
+    const named = document.createElement("a");
+    named.className = "card-name-link";
+    named.href = item.link;
+    named.target = "_blank";
+    named.rel = "noopener noreferrer";
+    named.textContent = item.name;
+    name.appendChild(named);
+  } else {
+    name.textContent = item.name;
+  }
   body.appendChild(name);
 
   if (item.description) {
@@ -256,17 +263,8 @@ function renderCard(item) {
   const footer = document.createElement("div");
   footer.className = "card-footer";
 
-  if (item.link) {
-    const link = document.createElement("a");
-    link.className = "card-link";
-    link.href = item.link;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = "View →";
-    footer.appendChild(link);
-  } else {
-    footer.appendChild(document.createElement("span"));
-  }
+  // The link lives on the card name, so the footer just holds the claim tick.
+  footer.appendChild(document.createElement("span"));
 
   if (isSingle) {
     const toggle = document.createElement("label");
