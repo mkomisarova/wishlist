@@ -7,7 +7,7 @@
 <!-- The ?v= number is a cache-buster: browsers hang on to the old style.css
      and app.js for a while after a change, so bump this number whenever
      either file changes and every visitor gets the new one immediately. -->
-<link rel="stylesheet" href="css/style.css?v=8" />
+<link rel="stylesheet" href="css/style.css?v=9" />
 </head>
 <body>
 
@@ -50,17 +50,30 @@
     <li><span class="interest-emoji">🔢</span><span><strong>Судоку</strong> — можно дарить журналы судоку</span></li>
     <li><span class="interest-emoji">🎤</span><span><strong>Тейлор Свифт</strong> — её мерч и всё с ней</span></li>
   </ul>
-  <p class="fav-colors">
-    Любимые цвета:
-    <span class="swatch" style="--c: #f7c9db"></span> нежно-розовый
-    и <span class="swatch" style="--c: #9d2235"></span> латышский
-  </p>
+</section>
+
+<!-- Про меня: the practical facts a person needs before buying — sizes, food,
+     what Milana likes. To add another one, copy a single <li> line below; the
+     grid reflows on its own. The food line is deliberately first and full
+     width, because it's the one that can spoil a present outright. -->
+<section class="interests" id="about">
+  <h2>Про меня</h2>
+  <ul class="interest-list">
+    <li class="fact-wide"><span class="interest-emoji">🚫</span><span><strong>Еда</strong> — только без глютена, без молочного и без пальмового масла</span></li>
+    <li><span class="interest-emoji">👟</span><span><strong>Размер обуви</strong> — 39–40</span></li>
+    <li><span class="interest-emoji">👕</span><span><strong>Размер одежды</strong> — S</span></li>
+    <li><span class="interest-emoji">✨</span><span><strong>Люблю золотое и блестящее</strong></span></li>
+    <li><span class="interest-emoji">🍵</span><span><strong>Люблю матчу</strong></span></li>
+    <li><span class="interest-emoji">🎨</span><span><strong>Любимые цвета</strong> —
+      <span class="swatch" style="--c: #f7c9db"></span> нежно-розовый
+      и <span class="swatch" style="--c: #9d2235"></span> латышский</span></li>
+  </ul>
 </section>
 
 <footer class="page-footer">
   <p>Спасибо! 💛</p>
 </footer>
 
-<script type="module" src="js/app.js?v=8"></script>
+<script type="module" src="js/app.js?v=9"></script>
 </body>
 </html>

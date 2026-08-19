@@ -378,11 +378,17 @@ header.page-header .gold-legend {
   line-height: 1;
 }
 
-.fav-colors {
-  margin: 22px 0 0;
-  text-align: center;
-  font-size: 0.88rem;
-  color: var(--text-muted);
+/* Two "interests" sections run back to back, so only the first one needs the
+   big gap above its rule. */
+#about { padding-top: 0; }
+
+/* The food line spans the whole grid row: it's a restriction rather than a
+   preference, and it's the one that decides whether a present can be eaten
+   at all, so it gets the width and a warmer background instead of sitting in
+   the corner as one tile among six. */
+.interest-list li.fact-wide {
+  grid-column: 1 / -1;
+  background: var(--gold-soft);
 }
 
 .swatch {
