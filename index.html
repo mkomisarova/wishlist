@@ -7,7 +7,7 @@
 <!-- The ?v= number is a cache-buster: browsers hang on to the old style.css
      and app.js for a while after a change, so bump this number whenever
      either file changes and every visitor gets the new one immediately. -->
-<link rel="stylesheet" href="css/style.css?v=9" />
+<link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 <body>
 
@@ -54,12 +54,13 @@
 
 <!-- Про меня: the practical facts a person needs before buying — sizes, food,
      what Milana likes. To add another one, copy a single <li> line below; the
-     grid reflows on its own. The food line is deliberately first and full
-     width, because it's the one that can spoil a present outright. -->
+     grid reflows on its own. Every fact is one plain tile: the food line was
+     singled out with a wide gold panel at first, and Milana found that too
+     shouty, so it now sits in the row like the rest. -->
 <section class="interests" id="about">
   <h2>Про меня</h2>
   <ul class="interest-list">
-    <li class="fact-wide"><span class="interest-emoji">🚫</span><span><strong>Еда</strong> — только без глютена, без молочного и без пальмового масла</span></li>
+    <li><span class="interest-emoji">🚫</span><span><strong>Я не ем</strong> — глютен, молочное и пальмовое масло</span></li>
     <li><span class="interest-emoji">👟</span><span><strong>Размер обуви</strong> — 39–40</span></li>
     <li><span class="interest-emoji">👕</span><span><strong>Размер одежды</strong> — S</span></li>
     <li><span class="interest-emoji">✨</span><span><strong>Люблю золотое и блестящее</strong></span></li>
@@ -74,6 +75,6 @@
   <p>Спасибо! 💛</p>
 </footer>
 
-<script type="module" src="js/app.js?v=9"></script>
+<script type="module" src="js/app.js?v=10"></script>
 </body>
 </html>

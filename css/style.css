@@ -382,14 +382,6 @@ header.page-header .gold-legend {
    big gap above its rule. */
 #about { padding-top: 0; }
 
-/* The food line spans the whole grid row: it's a restriction rather than a
-   preference, and it's the one that decides whether a present can be eaten
-   at all, so it gets the width and a warmer background instead of sitting in
-   the corner as one tile among six. */
-.interest-list li.fact-wide {
-  grid-column: 1 / -1;
-  background: var(--gold-soft);
-}
 
 .swatch {
   display: inline-block;
