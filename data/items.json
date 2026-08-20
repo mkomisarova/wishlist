@@ -252,6 +252,48 @@
     "image": "images/oodie.jpg"
   },
   {
+    "id": "bordallo-cabbage-29",
+    "name": "Bordallo Pinheiro Cabbage bļoda 29 cm",
+    "description": "Stockmann",
+    "priceMin": 49.9,
+    "priceMax": null,
+    "priceLabel": "€49.90",
+    "currency": "EUR",
+    "category": "Для дома",
+    "link": "https://www.stockmann.lv/lv-lv/bordallo-pinheiro-cabbage-bloda-29-cm/18119489985-1.html",
+    "starred": false,
+    "quantityType": "single",
+    "image": "images/bordallo-cabbage-29.jpg"
+  },
+  {
+    "id": "bordallo-cabbage-15",
+    "name": "Bordallo Pinheiro Cabbage bļoda 15 cm",
+    "description": "Stockmann",
+    "priceMin": 19.9,
+    "priceMax": null,
+    "priceLabel": "€19.90",
+    "currency": "EUR",
+    "category": "Для дома",
+    "link": "https://www.stockmann.lv/lv-lv/bordallo-pinheiro-cabbage-bloda-15-cm/18119489721-1.html",
+    "starred": false,
+    "quantityType": "single",
+    "image": "images/bordallo-cabbage-15.jpg"
+  },
+  {
+    "id": "klevering-goody-plate",
+    "name": "&klevering Goody Medium servēšanas šķīvis 27.5 cm",
+    "description": "Stockmann",
+    "priceMin": 27.5,
+    "priceMax": null,
+    "priceLabel": "€27.50",
+    "currency": "EUR",
+    "category": "Для дома",
+    "link": "https://www.stockmann.lv/lv-lv/-klevering-goody-medium-servesanas-skivis-27.5-cm/17303845295-1.html",
+    "starred": false,
+    "quantityType": "single",
+    "image": "images/klevering-goody-plate.jpg"
+  },
+  {
     "id": "atomic-habits-workbook",
     "name": "Atomic Habits Workbook",
     "description": "James Clear",
