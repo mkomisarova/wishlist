@@ -657,9 +657,10 @@
     "priceLabel": "€210",
     "currency": "EUR",
     "category": "Одежда",
-    "link": "https://www.ugg.com/women-boots/classic-mini-ii/1016222.html",
+    "link": "https://www.ugg.com/eu/en/lv/classic-mini-ii-boot/1016222.html",
     "starred": false,
-    "quantityType": "single"
+    "quantityType": "single",
+    "image": "images/ugg-mini-ii-pink.jpg"
   },
   {
     "id": "massage-chair-cover",
