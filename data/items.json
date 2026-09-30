@@ -115,6 +115,7 @@
     "id": "lego-botanicals",
     "name": "Lego Botanicals",
     "description": "Любой набор из серии",
+    "description_lv": "Jebkurš komplekts no sērijas",
     "priceMin": 40,
     "priceMax": null,
     "priceLabel": "€40",
@@ -128,6 +129,7 @@
   {
     "id": "dior-rose-gold-glow",
     "name": "Dior палетка Rose Gold Glow",
+    "name_lv": "Dior Rose Gold Glow palete",
     "description": "",
     "priceMin": 60,
     "priceMax": null,
@@ -142,7 +144,9 @@
   {
     "id": "gold-chain-pendant",
     "name": "Цепочка из золота с подвеской",
+    "name_lv": "Zelta ķēdīte ar piekariņu",
     "description": "С обычным камнем",
+    "description_lv": "Ar vienkāršu akmentiņu",
     "priceMin": 100,
     "priceMax": null,
     "priceLabel": "€100",
@@ -156,6 +160,7 @@
   {
     "id": "pink-digital-camera",
     "name": "Маленькая дигитальная розовая камера",
+    "name_lv": "Maza digitālā rozā kamera",
     "description": "",
     "priceMin": 100,
     "priceMax": null,
@@ -184,6 +189,7 @@
   {
     "id": "massage-certificate",
     "name": "Сертификат на массаж",
+    "name_lv": "Sertifikāts masāžai",
     "description": "",
     "priceMin": 50,
     "priceMax": null,
@@ -198,6 +204,7 @@
   {
     "id": "selfie-light",
     "name": "Selfie light для айфона",
+    "name_lv": "Selfie lampiņa iPhone",
     "description": "",
     "priceMin": 20,
     "priceMax": null,
@@ -212,6 +219,7 @@
   {
     "id": "markers-set",
     "name": "Сет крутых маркеров/фломастеров",
+    "name_lv": "Foršu marķieru/flomāsteru komplekts",
     "description": "",
     "priceMin": 30,
     "priceMax": null,
@@ -226,6 +234,7 @@
   {
     "id": "cable-organizer",
     "name": "Какой-нибудь организатор проводов",
+    "name_lv": "Kaut kāds vadu organizētājs",
     "description": "",
     "priceMin": 20,
     "priceMax": null,
@@ -338,6 +347,7 @@
   {
     "id": "butter-squishy",
     "name": "Большой butter squishy",
+    "name_lv": "Liels butter squishy",
     "description": "",
     "priceMin": 15,
     "priceMax": null,
@@ -366,7 +376,9 @@
   {
     "id": "body-shop-passionfruit",
     "name": "The Body Shop Passionfruit или Caramel Cuddle",
+    "name_lv": "The Body Shop Passionfruit vai Caramel Cuddle",
     "description": "Что угодно с этими вкусами",
+    "description_lv": "Jebkas ar šīm smaržām",
     "priceMin": 15,
     "priceMax": null,
     "priceLabel": "€15",
@@ -380,7 +392,9 @@
   {
     "id": "squishmallows-big",
     "name": "Squishmallows большой",
+    "name_lv": "Squishmallows liels",
     "description": "50–60 см",
+    "description_lv": "50–60 cm",
     "priceMin": 35,
     "priceMax": null,
     "priceLabel": "€35",
@@ -394,6 +408,7 @@
   {
     "id": "tea-selection",
     "name": "Комплект зеленых/фруктовых чайных пакетиков",
+    "name_lv": "Zaļās/augļu tējas maisiņu komplekts",
     "description": "",
     "priceMin": 15,
     "priceMax": null,
@@ -408,6 +423,7 @@
   {
     "id": "lip-balm-gloss",
     "name": "Любая гигиеническая помада/блеск для губ",
+    "name_lv": "Jebkurš lūpu balzams vai spīdums lūpām",
     "description": "",
     "priceMin": 10,
     "priceMax": null,
@@ -422,6 +438,7 @@
   {
     "id": "cool-stickers",
     "name": "Любые классные наклейки",
+    "name_lv": "Jebkuras foršas uzlīmes",
     "description": "",
     "priceMin": 2,
     "priceMax": null,
@@ -436,7 +453,9 @@
   {
     "id": "glittery-makeup",
     "name": "Любая блестящая косметика",
+    "name_lv": "Jebkura spīdīga kosmētika",
     "description": "Особенно золотая — тени, лайнер, блеск, например от NYX",
+    "description_lv": "Īpaši zelta krāsā — ēnas, aizliners, spīdums, piemēram, no NYX",
     "priceMin": 15,
     "priceMax": null,
     "priceLabel": "€15",
@@ -450,6 +469,7 @@
   {
     "id": "face-sheet-masks",
     "name": "Увлажняющие маски для лица",
+    "name_lv": "Mitrinošas sejas maskas",
     "description": "",
     "priceMin": 3,
     "priceMax": null,
@@ -464,7 +484,9 @@
   {
     "id": "shower-care",
     "name": "Уходовые средства",
+    "name_lv": "Kopšanas līdzekļi",
     "description": "Гель для душа, скраб, мыло",
+    "description_lv": "Dušas želeja, skrubis, ziepes",
     "priceMin": 7,
     "priceMax": null,
     "priceLabel": "€7",
@@ -492,6 +514,7 @@
   {
     "id": "hair-mask-oil",
     "name": "Маска/масло для волос",
+    "name_lv": "Maska/eļļa matiem",
     "description": "",
     "priceMin": 10,
     "priceMax": null,
@@ -506,6 +529,7 @@
   {
     "id": "lip-mask",
     "name": "Маска для губ",
+    "name_lv": "Lūpu maska",
     "description": "",
     "priceMin": 10,
     "priceMax": null,
@@ -520,7 +544,9 @@
   {
     "id": "fun-socks",
     "name": "Носки",
+    "name_lv": "Zeķes",
     "description": "С рисунками, цветные, можно теплые",
+    "description_lv": "Ar rakstiem, krāsainas, var būt siltas",
     "priceMin": 10,
     "priceMax": null,
     "priceLabel": "€10",
@@ -534,7 +560,9 @@
   {
     "id": "dark-chocolate",
     "name": "Темный шоколад 72–75%",
+    "name_lv": "Tumšā šokolāde 72–75%",
     "description": "Просто или с ягодами/орехами",
+    "description_lv": "Vienkārša vai ar ogām/riekstiem",
     "priceMin": 5,
     "priceMax": null,
     "priceLabel": "€5",
@@ -563,6 +591,7 @@
     "id": "paint-by-numbers",
     "name": "Paint by numbers",
     "description": "Пейзаж или что-нибудь прикольное",
+    "description_lv": "Ainava vai kaut kas foršs",
     "priceMin": 10,
     "priceMax": null,
     "priceLabel": "€10",
@@ -576,10 +605,12 @@
   {
     "id": "recipe-book",
     "name": "Книга своих любимых проверенных рецептов",
+    "name_lv": "Grāmata ar savām iecienītākajām pārbaudītajām receptēm",
     "description": "",
     "priceMin": null,
     "priceMax": null,
     "priceLabel": "бесценно",
+    "priceLabel_lv": "nenovērtējams",
     "currency": "EUR",
     "category": "Книги",
     "link": "",
@@ -590,7 +621,9 @@
   {
     "id": "detective-books",
     "name": "Книжки на усмотрение дарящего",
+    "name_lv": "Grāmatiņas pēc dāvinātāja ieskatiem",
     "description": "Люблю детективы",
+    "description_lv": "Man patīk detektīvi",
     "priceMin": 15,
     "priceMax": null,
     "priceLabel": "€15",
@@ -604,6 +637,7 @@
   {
     "id": "iphone-cases",
     "name": "Прикольные чехлы на iPhone 13 Pro Max",
+    "name_lv": "Foršas vāciņi iPhone 13 Pro Max",
     "description": "",
     "priceMin": 5,
     "priceMax": null,
@@ -618,6 +652,7 @@
   {
     "id": "blue-pens",
     "name": "Классные синие ручки",
+    "name_lv": "Foršas zilas pildspalvas",
     "description": "",
     "priceMin": 2,
     "priceMax": null,
@@ -632,7 +667,9 @@
   {
     "id": "trendy-stuff",
     "name": "Трендовая фигня",
+    "name_lv": "Trendīgas lietiņas",
     "description": "Сквиши, лабубу и так далее",
+    "description_lv": "Skviši, labubu un tā tālāk",
     "priceMin": 10,
     "priceMax": null,
     "priceLabel": "€10",

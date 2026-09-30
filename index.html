@@ -7,26 +7,31 @@
 <!-- The ?v= number is a cache-buster: browsers hang on to the old style.css
      and app.js for a while after a change, so bump this number whenever
      either file changes and every visitor gets the new one immediately. -->
-<link rel="stylesheet" href="css/style.css?v=10" />
+<link rel="stylesheet" href="css/style.css?v=11" />
 </head>
 <body>
 
+<div class="lang-switch" id="lang-switch" role="group" aria-label="Language / Valoda">
+  <button type="button" class="lang-btn" data-lang="ru">RU</button>
+  <button type="button" class="lang-btn" data-lang="lv">LV</button>
+</div>
+
 <header class="page-header">
   <h1>🎁 Milana's Wishlist</h1>
-  <p>Нажми «Я куплю» на подарках, которые дарят один раз — все увидят, что он уже занят</p>
-  <p class="rules-note">Свои идеи тоже приветствуются, и самодельное тоже!!!<br />Подарки в случайном порядке</p>
-  <p class="gold-legend"><span class="gold-key"></span> = прямо очень хочу и давно хочу</p>
+  <p data-i18n="subtitle">Нажми «Я куплю» на подарках, которые дарят один раз — все увидят, что он уже занят</p>
+  <p class="rules-note"><span data-i18n="rules-line1">Свои идеи тоже приветствуются, и самодельное тоже!!!</span><br /><span data-i18n="rules-line2">Подарки в случайном порядке</span></p>
+  <p class="gold-legend"><span class="gold-key"></span> <span data-i18n="gold-legend-text">= прямо очень хочу и давно хочу</span></p>
 </header>
 
 <div id="notice" class="notice hidden"></div>
 
 <div class="controls">
   <div class="controls-row">
-    <input type="text" id="search-input" placeholder="Поиск по списку..." />
+    <input type="text" id="search-input" data-i18n-placeholder="search-placeholder" placeholder="Поиск по списку..." />
     <select id="sort-select">
-      <option value="custom">Как в списке</option>
-      <option value="price-asc">Сначала дешёвые</option>
-      <option value="price-desc">Сначала дорогие</option>
+      <option value="custom" data-i18n="sort-custom">Как в списке</option>
+      <option value="price-asc" data-i18n="sort-price-asc">Сначала дешёвые</option>
+      <option value="price-desc" data-i18n="sort-price-desc">Сначала дорогие</option>
     </select>
   </div>
   <div class="chip-row" id="category-chips">
@@ -36,19 +41,19 @@
 
 <main>
   <div id="empty-state">
-    <p>Ничего не нашлось</p>
+    <p data-i18n="empty-state">Ничего не нашлось</p>
   </div>
   <div class="grid" id="items-grid"></div>
 </main>
 
 <section class="interests" id="interests">
-  <h2>Интересы</h2>
+  <h2 data-i18n="interests-title">Интересы</h2>
   <ul class="interest-list">
-    <li><span class="interest-emoji">⛏️</span><span><strong>Майнкрафт</strong> — можно дарить всё с майнкрафтом</span></li>
-    <li><span class="interest-emoji">🍌</span><span><strong>Миньоны</strong> — можно дарить всё с миньонами</span></li>
-    <li><span class="interest-emoji">🦕</span><span><strong>Динозавры</strong> — можно дарить всё с динозаврами</span></li>
-    <li><span class="interest-emoji">🔢</span><span><strong>Судоку</strong> — можно дарить журналы судоку</span></li>
-    <li><span class="interest-emoji">🎤</span><span><strong>Тейлор Свифт</strong> — её мерч и всё с ней</span></li>
+    <li><span class="interest-emoji">⛏️</span><span><strong data-i18n="int-minecraft-term">Майнкрафт</strong> — <span data-i18n="int-minecraft-desc">можно дарить всё с майнкрафтом</span></span></li>
+    <li><span class="interest-emoji">🍌</span><span><strong data-i18n="int-minions-term">Миньоны</strong> — <span data-i18n="int-minions-desc">можно дарить всё с миньонами</span></span></li>
+    <li><span class="interest-emoji">🦕</span><span><strong data-i18n="int-dino-term">Динозавры</strong> — <span data-i18n="int-dino-desc">можно дарить всё с динозаврами</span></span></li>
+    <li><span class="interest-emoji">🔢</span><span><strong data-i18n="int-sudoku-term">Судоку</strong> — <span data-i18n="int-sudoku-desc">можно дарить журналы судоку</span></span></li>
+    <li><span class="interest-emoji">🎤</span><span><strong data-i18n="int-taylor-term">Тейлор Свифт</strong> — <span data-i18n="int-taylor-desc">её мерч и всё с ней</span></span></li>
   </ul>
 </section>
 
@@ -58,23 +63,23 @@
      singled out with a wide gold panel at first, and Milana found that too
      shouty, so it now sits in the row like the rest. -->
 <section class="interests" id="about">
-  <h2>Про меня</h2>
+  <h2 data-i18n="about-title">Про меня</h2>
   <ul class="interest-list">
-    <li><span class="interest-emoji">🚫</span><span><strong>Я не ем</strong> — глютен, молочку и пальмовое масло</span></li>
-    <li><span class="interest-emoji">🎨</span><span><strong>Любимые цвета</strong> —
-      <span class="swatch" style="--c: #f7c9db"></span> нежно-розовый
-      и <span class="swatch" style="--c: #9d2235"></span> латышский</span></li>
-    <li><span class="interest-emoji">👟</span><span><strong>Размер обуви</strong> — 39–40</span></li>
-    <li><span class="interest-emoji">👕</span><span><strong>Размер одежды</strong> — S</span></li>
-    <li><span class="interest-emoji">✨</span><span><strong>Люблю золотое и блестящее</strong></span></li>
-    <li><span class="interest-emoji">🍵</span><span><strong>Люблю матчу</strong></span></li>
+    <li><span class="interest-emoji">🚫</span><span><strong data-i18n="not-eat-term">Я не ем</strong> — <span data-i18n="not-eat-desc">глютен, молочку и пальмовое масло</span></span></li>
+    <li><span class="interest-emoji">🎨</span><span><strong data-i18n="colors-term">Любимые цвета</strong> —
+      <span class="swatch" style="--c: #f7c9db"></span> <span data-i18n="color-pink">нежно-розовый</span>
+      <span data-i18n="and-connector">и</span> <span class="swatch" style="--c: #9d2235"></span> <span data-i18n="color-lv">латышский</span></span></li>
+    <li><span class="interest-emoji">👟</span><span><strong data-i18n="shoe-size-term">Размер обуви</strong> — 39–40</span></li>
+    <li><span class="interest-emoji">👕</span><span><strong data-i18n="clothing-size-term">Размер одежды</strong> — S</span></li>
+    <li><span class="interest-emoji">✨</span><span><strong data-i18n="gold-love-term">Люблю золотое и блестящее</strong></span></li>
+    <li><span class="interest-emoji">🍵</span><span><strong data-i18n="matcha-love-term">Люблю матчу</strong></span></li>
   </ul>
 </section>
 
 <footer class="page-footer">
-  <p>Спасибо! 💛</p>
+  <p data-i18n="thanks">Спасибо! 💛</p>
 </footer>
 
-<script type="module" src="js/app.js?v=10"></script>
+<script type="module" src="js/app.js?v=11"></script>
 </body>
 </html>

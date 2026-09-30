@@ -26,6 +26,39 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Language switch — fixed to the corner so it stays put regardless of
+   header height, and out of the way of the centered header text. */
+.lang-switch {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  display: flex;
+  gap: 2px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+  box-shadow: var(--shadow);
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  color: white;
+}
+
 header.page-header {
   padding: 32px 20px 16px;
   text-align: center;
@@ -544,4 +577,6 @@ code {
   header.page-header h1 { font-size: 1.5rem; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
   .card-body { padding: 10px 12px 12px; }
+  .lang-switch { top: 10px; right: 10px; }
+  .lang-btn { padding: 4px 9px; font-size: 0.72rem; }
 }
