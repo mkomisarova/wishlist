@@ -461,7 +461,7 @@
     "currency": "EUR",
     "category": "Игрушки",
     "link": "",
-    "starred": false,
+    "starred": true,
     "quantityType": "multiple",
     "image": "images/squishmallows-big.jpg"
   },
@@ -476,7 +476,7 @@
     "currency": "EUR",
     "category": "Еда и напитки",
     "link": "",
-    "starred": false,
+    "starred": true,
     "quantityType": "multiple",
     "image": "images/tea-selection.jpg"
   },
@@ -491,7 +491,7 @@
     "currency": "EUR",
     "category": "Красота",
     "link": "",
-    "starred": true,
+    "starred": false,
     "quantityType": "multiple",
     "image": "images/lip-balm-gloss.jpg"
   },
@@ -515,7 +515,7 @@
     "name": "Любая блестящая косметика",
     "name_lv": "Jebkura spīdīga kosmētika",
     "description": "Особенно золотая — тени, лайнер, блеск, например от NYX",
-    "description_lv": "Īpaši zelta krāsā — ēnas, aizliners, spīdums, piemēram, no NYX",
+    "description_lv": "Īpaši zelta krāsā — acu ēnas, acu laineris, lūpu spīdums, piemēram, no NYX",
     "priceMin": 15,
     "priceMax": null,
     "priceLabel": "€15",
@@ -738,6 +738,6 @@
     "link": "",
     "starred": false,
     "quantityType": "multiple",
-    "image": ""
+    "image": "images/trendy-stuff.jpg"
   }
 ]
