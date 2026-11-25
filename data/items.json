@@ -218,20 +218,6 @@
     "image": "images/butter-squishy.jpg"
   },
   {
-    "id": "mystery-dumpling",
-    "name": "Mystery dumpling",
-    "description": "",
-    "priceMin": 12,
-    "priceMax": null,
-    "priceLabel": "€12",
-    "currency": "EUR",
-    "category": "Игрушки",
-    "link": "",
-    "starred": false,
-    "quantityType": "multiple",
-    "image": "images/mystery-dumpling.jpg"
-  },
-  {
     "id": "body-shop-passionfruit",
     "name": "The Body Shop Passionfruit или Caramel Cuddle",
     "name_lv": "The Body Shop Passionfruit vai Caramel Cuddle",
