@@ -1,19 +1,5 @@
 [
   {
-    "id": "serax-fish-carafe-set",
-    "name": "Serax blue fish carafe and glasses set",
-    "description": "Stockmann",
-    "priceMin": 59,
-    "priceMax": null,
-    "priceLabel": "€59",
-    "currency": "EUR",
-    "category": "Для дома",
-    "link": "https://www.stockmann.lv/lv-lv/serax-blue-fish-set-carafe-and-glasses-glazu-komplekts-3-gab./17550436449-1.html",
-    "starred": true,
-    "quantityType": "single",
-    "image": "images/serax-fish-carafe-set.jpg"
-  },
-  {
     "id": "mateus-oyster-bowl",
     "name": "Mateus Oyster bļoda 18x16 cm rozā",
     "description": "Stockmann",
@@ -26,34 +12,6 @@
     "starred": true,
     "quantityType": "single",
     "image": "images/mateus-oyster-bowl.jpg"
-  },
-  {
-    "id": "lego-minecraft-creeper",
-    "name": "Minecraft LEGO Creeper",
-    "description": "",
-    "priceMin": 40,
-    "priceMax": null,
-    "priceLabel": "€40",
-    "currency": "EUR",
-    "category": "Игрушки",
-    "link": "",
-    "starred": true,
-    "quantityType": "single",
-    "image": "images/lego-minecraft-creeper.jpg"
-  },
-  {
-    "id": "sdj-cheeky-biquini",
-    "name": "Sol de Janeiro Cheeky Biquini",
-    "description": "",
-    "priceMin": 25,
-    "priceMax": null,
-    "priceLabel": "€25",
-    "currency": "EUR",
-    "category": "Красота",
-    "link": "https://www.douglas.lv/lv/katalogs/sol-de-janeiro-cheeky-biqu-ni-perfume-mist/",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/sdj-cheeky-biquini.jpg"
   },
   {
     "id": "morphe-outer-spice",
@@ -70,34 +28,6 @@
     "image": "images/morphe-outer-spice.jpg"
   },
   {
-    "id": "sdj-bum-bum-scrub",
-    "name": "Sol de Janeiro Bum Bum Scrub",
-    "description": "",
-    "priceMin": 29,
-    "priceMax": null,
-    "priceLabel": "€29",
-    "currency": "EUR",
-    "category": "Красота",
-    "link": "https://www.douglas.lv/lv/katalogs/sol-de-janeiro-bum-bum-body-scrub/",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/sdj-bum-bum-scrub.jpg"
-  },
-  {
-    "id": "sdj-foot-cream",
-    "name": "Sol de Janeiro Foot Cream",
-    "description": "",
-    "priceMin": 20,
-    "priceMax": null,
-    "priceLabel": "€20",
-    "currency": "EUR",
-    "category": "Красота",
-    "link": "",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/sdj-foot-cream.jpg"
-  },
-  {
     "id": "mateus-oyster-plate",
     "name": "Mateus Oyster šķīvis 20 cm rozā",
     "description": "Stockmann",
@@ -110,21 +40,6 @@
     "starred": false,
     "quantityType": "single",
     "image": "images/mateus-oyster-plate.jpg"
-  },
-  {
-    "id": "lego-botanicals",
-    "name": "Lego Botanicals",
-    "description": "Любой набор из серии",
-    "description_lv": "Jebkurš komplekts no sērijas",
-    "priceMin": 40,
-    "priceMax": null,
-    "priceLabel": "€40",
-    "currency": "EUR",
-    "category": "Игрушки",
-    "link": "",
-    "starred": false,
-    "quantityType": "multiple",
-    "image": "images/lego-botanicals.jpg"
   },
   {
     "id": "dior-rose-gold-glow",
@@ -142,22 +57,6 @@
     "image": "images/dior-rose-gold-glow.jpg"
   },
   {
-    "id": "gold-chain-pendant",
-    "name": "Цепочка из золота с подвеской",
-    "name_lv": "Zelta ķēdīte ar piekariņu",
-    "description": "С обычным камнем",
-    "description_lv": "Ar vienkāršu akmentiņu",
-    "priceMin": 100,
-    "priceMax": null,
-    "priceLabel": "€100",
-    "currency": "EUR",
-    "category": "Украшения",
-    "link": "",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/gold-chain-pendant.jpg"
-  },
-  {
     "id": "pink-digital-camera",
     "name": "Маленькая дигитальная розовая камера",
     "name_lv": "Maza digitālā rozā kamera",
@@ -173,20 +72,6 @@
     "image": "images/pink-digital-camera.jpg"
   },
   {
-    "id": "hp-sprocket-printer",
-    "name": "HP Sprocket Portable Instant Photo Printer",
-    "description": "2\"x3\", Blush Pink",
-    "priceMin": 100,
-    "priceMax": null,
-    "priceLabel": "€100",
-    "currency": "EUR",
-    "category": "Техника",
-    "link": "https://sprocketprinters.com/products/hp-sprocket-2x3-portable-instant-photo-printer?variant=51536551018727",
-    "starred": true,
-    "quantityType": "single",
-    "image": "images/hp-sprocket-printer.jpg"
-  },
-  {
     "id": "massage-certificate",
     "name": "Сертификат на массаж",
     "name_lv": "Sertifikāts masāžai",
@@ -200,21 +85,6 @@
     "starred": false,
     "quantityType": "single",
     "image": "images/massage-certificate.jpg"
-  },
-  {
-    "id": "selfie-light",
-    "name": "Selfie light для айфона",
-    "name_lv": "Selfie lampiņa iPhone",
-    "description": "",
-    "priceMin": 20,
-    "priceMax": null,
-    "priceLabel": "€20",
-    "currency": "EUR",
-    "category": "Техника",
-    "link": "",
-    "starred": true,
-    "quantityType": "single",
-    "image": "images/selfie-light.jpg"
   },
   {
     "id": "markers-set",
@@ -289,34 +159,6 @@
     "image": "images/bordallo-cabbage-15.jpg"
   },
   {
-    "id": "klevering-goody-plate",
-    "name": "&klevering Goody Medium servēšanas šķīvis 27.5 cm",
-    "description": "Stockmann",
-    "priceMin": 28,
-    "priceMax": null,
-    "priceLabel": "€28",
-    "currency": "EUR",
-    "category": "Для дома",
-    "link": "https://www.stockmann.lv/lv-lv/-klevering-goody-medium-servesanas-skivis-27.5-cm/17303845295-1.html",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/klevering-goody-plate.jpg"
-  },
-  {
-    "id": "atomic-habits-workbook",
-    "name": "Atomic Habits Workbook",
-    "description": "James Clear",
-    "priceMin": 20,
-    "priceMax": null,
-    "priceLabel": "€20",
-    "currency": "EUR",
-    "category": "Книги",
-    "link": "",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/atomic-habits-workbook.jpg"
-  },
-  {
     "id": "make-your-brain-work",
     "name": "Make Your Brain Work",
     "description": "Amy Brann",
@@ -329,50 +171,6 @@
     "starred": false,
     "quantityType": "single",
     "image": "images/make-your-brain-work.jpg"
-  },
-  {
-    "id": "12-weeks-sharper-you",
-    "name": "12 Weeks to a Sharper You",
-    "description": "Dr Sanjay Gupta",
-    "priceMin": 14,
-    "priceMax": null,
-    "priceLabel": "€14",
-    "currency": "EUR",
-    "category": "Книги",
-    "link": "",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/12-weeks-sharper-you.jpg"
-  },
-  {
-    "id": "jbl-flip6-speaker",
-    "name": "Колонка JBL Flip 7, розовая",
-    "name_lv": "JBL Flip 7 skaļrunis, rozā",
-    "description": "Или JBL Grip, розовая",
-    "description_lv": "Vai JBL Grip, rozā",
-    "priceMin": 110,
-    "priceMax": null,
-    "priceLabel": "€110",
-    "currency": "EUR",
-    "category": "Техника",
-    "link": "https://www.euronics.lv/en/audio/portable-speakers/medium-speakers/jblflip7pink/jbl-flip-7-pink-portable-wireless-speaker",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/jbl-flip7-pink.jpg"
-  },
-  {
-    "id": "ugg-classic-mini-ii-pink",
-    "name": "Угги UGG Classic Mini II, розовые, размер 40",
-    "name_lv": "UGG Classic Mini II zābaki, rozā, izmērs 40",
-    "priceMin": 190,
-    "priceMax": null,
-    "priceLabel": "€190",
-    "currency": "EUR",
-    "category": "Одежда",
-    "link": "https://www.ugg.com/eu/en/lv/classic-mini-ii-boot/1016222.html",
-    "starred": false,
-    "quantityType": "single",
-    "image": "images/ugg-mini-ii-pink.jpg"
   },
   {
     "id": "massage-chair-cover",
